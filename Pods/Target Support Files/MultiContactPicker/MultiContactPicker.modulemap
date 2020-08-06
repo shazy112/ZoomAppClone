@@ -1,0 +1,6 @@
+framework module MultiContactPicker {
+  umbrella header "MultiContactPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

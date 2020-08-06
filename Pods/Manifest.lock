@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Eureka (4.3.1)
+  - JGProgressHUD (2.0.3)
+  - JSONWebToken (2.2.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - MultiContactPicker (1.0.0)
+  - Presentr (1.9)
+  - Result (4.0.1)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Eureka
+  - JGProgressHUD
+  - JSONWebToken
+  - Moya
+  - MultiContactPicker (from `https://github.com/Radwa5aled/MultiContactPicker.git`, tag `1.0.2`)
+  - Presentr
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Eureka
+    - JGProgressHUD
+    - JSONWebToken
+    - Moya
+    - Presentr
+    - Result
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  MultiContactPicker:
+    :git: https://github.com/Radwa5aled/MultiContactPicker.git
+    :tag: 1.0.2
+
+CHECKOUT OPTIONS:
+  MultiContactPicker:
+    :git: https://github.com/Radwa5aled/MultiContactPicker.git
+    :tag: 1.0.2
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  MultiContactPicker: a47a37f8b2cadee341d4410a85244a811f7d6f9e
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  Result: a6e784bebf48b471d59cddc1adb81f41f678c487
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: da57770b300a2eb9d7f5139f7179d47695d66694
+
+COCOAPODS: 1.5.3

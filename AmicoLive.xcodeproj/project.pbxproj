@@ -1,0 +1,1161 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230137E821BED119009ED946 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230137E721BED119009ED946 /* Defaults.swift */; };
+		23025A3421C005900022029F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23025A3321C005900022029F /* Alert.swift */; };
+		230462DA21C7DBC90003BAED /* AddContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230462D921C7DBC90003BAED /* AddContactsTableViewCell.swift */; };
+		230462DD21C7DC0F0003BAED /* AddContactOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230462DC21C7DC0F0003BAED /* AddContactOptionsViewController.swift */; };
+		230462DF21C7E1380003BAED /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230462DE21C7E1380003BAED /* ContactsViewController.swift */; };
+		2307650F21AE863F00E325D1 /* MobileRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234E3D3421ADA4CA0032F422 /* MobileRTC.framework */; };
+		2307651321AE867C00E325D1 /* MobileRTCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2307651221AE867C00E325D1 /* MobileRTCResources.bundle */; };
+		2317DE65228C110F005FF973 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317DE64228C110F005FF973 /* ForgotPasswordViewController.swift */; };
+		23229DA721CBA15600A80989 /* AmicoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23229DA621CBA15600A80989 /* AmicoTextField.swift */; };
+		23229DA921CBB58C00A80989 /* GetUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23229DA821CBB58C00A80989 /* GetUserViewModel.swift */; };
+		23229DAB21CBB64F00A80989 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23229DAA21CBB64F00A80989 /* User.swift */; };
+		23229DAE21CBB71A00A80989 /* MenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23229DAD21CBB71A00A80989 /* MenuDataSource.swift */; };
+		2334C65221BE8BB3006EBE88 /* ScheduleMeetingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65121BE8BB3006EBE88 /* ScheduleMeetingData.swift */; };
+		2334C65421BE8C29006EBE88 /* MeetingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65321BE8C29006EBE88 /* MeetingType.swift */; };
+		2334C65621BE8C47006EBE88 /* AudioType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65521BE8C47006EBE88 /* AudioType.swift */; };
+		2334C65821BE936E006EBE88 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65721BE936E006EBE88 /* Toast.swift */; };
+		2334C65A21BE976D006EBE88 /* ErrorResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65921BE976D006EBE88 /* ErrorResults.swift */; };
+		2334C65D21BEA61C006EBE88 /* CustomSplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2334C65C21BEA61C006EBE88 /* CustomSplashStoryboard.storyboard */; };
+		2334C65F21BEA655006EBE88 /* CustomSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334C65E21BEA655006EBE88 /* CustomSplashViewController.swift */; };
+		23412F3C21C8FA7300D18A62 /* ListUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23412F3A21C8FA7300D18A62 /* ListUsers.swift */; };
+		23412F3D21C8FA7300D18A62 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23412F3B21C8FA7300D18A62 /* Users.swift */; };
+		23412F4021C8FBDA00D18A62 /* ListUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23412F3F21C8FBDA00D18A62 /* ListUserViewModel.swift */; };
+		234746E32204366F005CEBBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234746E22204366F005CEBBC /* HomeViewController.swift */; };
+		234E3D0321AD7B990032F422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E3D0221AD7B990032F422 /* AppDelegate.swift */; };
+		234E3D0821AD7B990032F422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234E3D0621AD7B990032F422 /* Main.storyboard */; };
+		234E3D0A21AD7B9B0032F422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234E3D0921AD7B9B0032F422 /* Assets.xcassets */; };
+		234E3D0D21AD7B9B0032F422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234E3D0B21AD7B9B0032F422 /* LaunchScreen.storyboard */; };
+		234E3D1821AD7B9B0032F422 /* AmicoLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E3D1721AD7B9B0032F422 /* AmicoLiveTests.swift */; };
+		234E3D2321AD7B9B0032F422 /* AmicoLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234E3D2221AD7B9B0032F422 /* AmicoLiveUITests.swift */; };
+		234E3D3221AD808C0032F422 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 234E3D3121AD808C0032F422 /* .swiftlint.yml */; };
+		234E3D3921ADA4E10032F422 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 234E3D3821ADA4E10032F422 /* libsqlite3.tbd */; };
+		234E3D3D21ADA5010032F422 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 234E3D3C21ADA5010032F422 /* libz.1.2.5.tbd */; };
+		234E3D3F21ADA50E0032F422 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234E3D3E21ADA50E0032F422 /* VideoToolbox.framework */; };
+		23592CA421C116FF00527437 /* TextfieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23592CA321C116FF00527437 /* TextfieldValidator.swift */; };
+		235F505421BAAE5600919BEC /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F505321BAAE5600919BEC /* MessageManager.swift */; };
+		235F505621BABEFC00919BEC /* StartMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F505521BABEFC00919BEC /* StartMeetingViewController.swift */; };
+		23703391220865F6007AE1EE /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23703390220865F6007AE1EE /* RouteManager.swift */; };
+		237DE5D921AE871900CEC6C9 /* MobileRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237DE5D821AE871900CEC6C9 /* MobileRTC.framework */; };
+		237DE5DA21AE871900CEC6C9 /* MobileRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 237DE5D821AE871900CEC6C9 /* MobileRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		237DE5DE21AEB15300CEC6C9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5DD21AEB15300CEC6C9 /* MenuViewController.swift */; };
+		237DE5E021AEB3CB00CEC6C9 /* MenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5DF21AEB3CB00CEC6C9 /* MenuOptionTableViewCell.swift */; };
+		237DE5E221AEBE6400CEC6C9 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5E121AEBE6400CEC6C9 /* BorderedButton.swift */; };
+		237DE5E421AEDADC00CEC6C9 /* TokenGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5E321AEDADC00CEC6C9 /* TokenGenerator.swift */; };
+		237DE5E621AEDD5300CEC6C9 /* ZoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5E521AEDD5300CEC6C9 /* ZoomService.swift */; };
+		237DE5E821AEDE2900CEC6C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DE5E721AEDE2900CEC6C9 /* Constants.swift */; };
+		2384653821B03AB200E1B820 /* ScheduleMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384653721B03AB200E1B820 /* ScheduleMeetingViewController.swift */; };
+		2389CA1821C800E8005CF310 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2389CA1721C800E8005CF310 /* NetworkService.swift */; };
+		23A6357F21B15C8C00D9459E /* HeaderLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6357E21B15C8C00D9459E /* HeaderLogoView.swift */; };
+		23B21DE321E61CBB00386FE8 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B21DE221E61CBB00386FE8 /* AddContactViewController.swift */; };
+		23B21DE521E62FF700386FE8 /* CheckEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B21DE421E62FF700386FE8 /* CheckEmailViewModel.swift */; };
+		23DAA78421B7E76800C8B573 /* UpcommingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DAA78321B7E76800C8B573 /* UpcommingEventsViewController.swift */; };
+		23DAA78621B7F12400C8B573 /* UpcommingEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DAA78521B7F12400C8B573 /* UpcommingEventsTableViewCell.swift */; };
+		23DAA78821B7F55F00C8B573 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DAA78721B7F55F00C8B573 /* Extensions.swift */; };
+		23DD70BC21B69BAF0079666F /* JoinAMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD70BB21B69BAF0079666F /* JoinAMeetingViewController.swift */; };
+		23DD70BE21B6DFC50079666F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD70BD21B6DFC50079666F /* SignInViewController.swift */; };
+		23DF346721E4D28C00C96DB9 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF346621E4D28C00C96DB9 /* ContactsTableViewCell.swift */; };
+		23EF3B7221C9340800035C9E /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7121C9340800035C9E /* Extension+UIApplication.swift */; };
+		23EF3B7621C934C400035C9E /* Extension+UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7521C934C400035C9E /* Extension+UITextfield.swift */; };
+		23EF3B7821C934DB00035C9E /* Extension+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7721C934DB00035C9E /* Extension+UIScrollView.swift */; };
+		23EF3B7A21C934F000035C9E /* Extension+UiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7921C934F000035C9E /* Extension+UiViewController.swift */; };
+		23EF3B7C21C9350E00035C9E /* Extension+UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7B21C9350E00035C9E /* Extension+UiView.swift */; };
+		23EF3B7E21C935A500035C9E /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EF3B7D21C935A500035C9E /* Contacts.swift */; };
+		23FE33A121DA533B00669220 /* EditMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE33A021DA533B00669220 /* EditMeetingViewController.swift */; };
+		23FE33A321DA656400669220 /* MeetingItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE33A221DA656400669220 /* MeetingItemData.swift */; };
+		7CA7BD066A2865127E0463D0 /* Pods_AmicoLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F55379E55BF3C73BD641672 /* Pods_AmicoLive.framework */; };
+		965B36D202F2AD5937666716 /* Pods_AmicoLiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E02305EAB5D6D87088EA692 /* Pods_AmicoLiveTests.framework */; };
+		E2B888BFFCED6D2410F9588C /* Pods_AmicoLiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AE9D3D8E960D759133B795 /* Pods_AmicoLiveUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		234E3D1421AD7B9B0032F422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234E3CF721AD7B990032F422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234E3CFE21AD7B990032F422;
+			remoteInfo = AmicoLive;
+		};
+		234E3D1F21AD7B9B0032F422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234E3CF721AD7B990032F422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234E3CFE21AD7B990032F422;
+			remoteInfo = AmicoLive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		237DE5DB21AE871900CEC6C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				237DE5DA21AE871900CEC6C9 /* MobileRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F55379E55BF3C73BD641672 /* Pods_AmicoLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmicoLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E02305EAB5D6D87088EA692 /* Pods_AmicoLiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmicoLiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230137E721BED119009ED946 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		23025A3321C005900022029F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		230462D921C7DBC90003BAED /* AddContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsTableViewCell.swift; sourceTree = "<group>"; };
+		230462DC21C7DC0F0003BAED /* AddContactOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactOptionsViewController.swift; sourceTree = "<group>"; };
+		230462DE21C7E1380003BAED /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		2307651221AE867C00E325D1 /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobileRTCResources.bundle; sourceTree = "<group>"; };
+		2317DE64228C110F005FF973 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		23229DA621CBA15600A80989 /* AmicoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmicoTextField.swift; sourceTree = "<group>"; };
+		23229DA821CBB58C00A80989 /* GetUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserViewModel.swift; sourceTree = "<group>"; };
+		23229DAA21CBB64F00A80989 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		23229DAD21CBB71A00A80989 /* MenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataSource.swift; sourceTree = "<group>"; };
+		2334C65121BE8BB3006EBE88 /* ScheduleMeetingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMeetingData.swift; sourceTree = "<group>"; };
+		2334C65321BE8C29006EBE88 /* MeetingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingType.swift; sourceTree = "<group>"; };
+		2334C65521BE8C47006EBE88 /* AudioType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioType.swift; sourceTree = "<group>"; };
+		2334C65721BE936E006EBE88 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		2334C65921BE976D006EBE88 /* ErrorResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResults.swift; sourceTree = "<group>"; };
+		2334C65C21BEA61C006EBE88 /* CustomSplashStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomSplashStoryboard.storyboard; sourceTree = "<group>"; };
+		2334C65E21BEA655006EBE88 /* CustomSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplashViewController.swift; sourceTree = "<group>"; };
+		23412F3A21C8FA7300D18A62 /* ListUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListUsers.swift; path = AmicoLive/Models/ListUsers/ListUsers.swift; sourceTree = SOURCE_ROOT; };
+		23412F3B21C8FA7300D18A62 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Users.swift; path = AmicoLive/Models/ListUsers/Users.swift; sourceTree = SOURCE_ROOT; };
+		23412F3F21C8FBDA00D18A62 /* ListUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserViewModel.swift; sourceTree = "<group>"; };
+		234746E22204366F005CEBBC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		234A93FD21FB50D700599AB3 /* AmicoLive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AmicoLive.entitlements; sourceTree = "<group>"; };
+		234E3CFF21AD7B990032F422 /* AmicoLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmicoLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		234E3D0221AD7B990032F422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		234E3D0721AD7B990032F422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		234E3D0921AD7B9B0032F422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		234E3D0C21AD7B9B0032F422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		234E3D0E21AD7B9B0032F422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234E3D1321AD7B9B0032F422 /* AmicoLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmicoLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		234E3D1721AD7B9B0032F422 /* AmicoLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmicoLiveTests.swift; sourceTree = "<group>"; };
+		234E3D1921AD7B9B0032F422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234E3D1E21AD7B9B0032F422 /* AmicoLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmicoLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		234E3D2221AD7B9B0032F422 /* AmicoLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmicoLiveUITests.swift; sourceTree = "<group>"; };
+		234E3D2421AD7B9B0032F422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234E3D3121AD808C0032F422 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		234E3D3421ADA4CA0032F422 /* MobileRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileRTC.framework; path = "../../Downloads/zoom-sdk-ios-master/lib/MobileRTC.framework"; sourceTree = "<group>"; };
+		234E3D3521ADA4CA0032F422 /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobileRTCResources.bundle; path = "../../Downloads/zoom-sdk-ios-master/lib/MobileRTCResources.bundle"; sourceTree = "<group>"; };
+		234E3D3821ADA4E10032F422 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		234E3D3A21ADA4F20032F422 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		234E3D3C21ADA5010032F422 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		234E3D3E21ADA50E0032F422 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		23592CA321C116FF00527437 /* TextfieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldValidator.swift; sourceTree = "<group>"; };
+		235F505321BAAE5600919BEC /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		235F505521BABEFC00919BEC /* StartMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMeetingViewController.swift; sourceTree = "<group>"; };
+		23703390220865F6007AE1EE /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		237DE5D821AE871900CEC6C9 /* MobileRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileRTC.framework; sourceTree = "<group>"; };
+		237DE5DD21AEB15300CEC6C9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		237DE5DF21AEB3CB00CEC6C9 /* MenuOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionTableViewCell.swift; sourceTree = "<group>"; };
+		237DE5E121AEBE6400CEC6C9 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		237DE5E321AEDADC00CEC6C9 /* TokenGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenGenerator.swift; sourceTree = "<group>"; };
+		237DE5E521AEDD5300CEC6C9 /* ZoomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomService.swift; sourceTree = "<group>"; };
+		237DE5E721AEDE2900CEC6C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2384653721B03AB200E1B820 /* ScheduleMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMeetingViewController.swift; sourceTree = "<group>"; };
+		2389CA1721C800E8005CF310 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		23A6357E21B15C8C00D9459E /* HeaderLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLogoView.swift; sourceTree = "<group>"; };
+		23B21DE221E61CBB00386FE8 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		23B21DE421E62FF700386FE8 /* CheckEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewModel.swift; sourceTree = "<group>"; };
+		23DAA78321B7E76800C8B573 /* UpcommingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingEventsViewController.swift; sourceTree = "<group>"; };
+		23DAA78521B7F12400C8B573 /* UpcommingEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingEventsTableViewCell.swift; sourceTree = "<group>"; };
+		23DAA78721B7F55F00C8B573 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		23DD70BB21B69BAF0079666F /* JoinAMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAMeetingViewController.swift; sourceTree = "<group>"; };
+		23DD70BD21B6DFC50079666F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		23DF346621E4D28C00C96DB9 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		23EF3B7121C9340800035C9E /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		23EF3B7521C934C400035C9E /* Extension+UITextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextfield.swift"; sourceTree = "<group>"; };
+		23EF3B7721C934DB00035C9E /* Extension+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScrollView.swift"; sourceTree = "<group>"; };
+		23EF3B7921C934F000035C9E /* Extension+UiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UiViewController.swift"; sourceTree = "<group>"; };
+		23EF3B7B21C9350E00035C9E /* Extension+UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UiView.swift"; sourceTree = "<group>"; };
+		23EF3B7D21C935A500035C9E /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		23FE33A021DA533B00669220 /* EditMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMeetingViewController.swift; sourceTree = "<group>"; };
+		23FE33A221DA656400669220 /* MeetingItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingItemData.swift; sourceTree = "<group>"; };
+		57AE9D3D8E960D759133B795 /* Pods_AmicoLiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmicoLiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BED44374423B249E7425576 /* Pods-AmicoLiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLiveTests/Pods-AmicoLiveTests.release.xcconfig"; sourceTree = "<group>"; };
+		67F3F5624BA41B2AE44AEF79 /* Pods-AmicoLiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLiveUITests/Pods-AmicoLiveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		683C5CB13CC687B4947390E2 /* Pods-AmicoLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLive/Pods-AmicoLive.release.xcconfig"; sourceTree = "<group>"; };
+		6BB18DF6F4184E3E56BF75D0 /* Pods-AmicoLiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLiveTests/Pods-AmicoLiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B675AE09D3A6275D4D4C0635 /* Pods-AmicoLiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLiveUITests/Pods-AmicoLiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F2678720A621F9036D3751 /* Pods-AmicoLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmicoLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmicoLive/Pods-AmicoLive.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		234E3CFC21AD7B990032F422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2307650F21AE863F00E325D1 /* MobileRTC.framework in Frameworks */,
+				234E3D3F21ADA50E0032F422 /* VideoToolbox.framework in Frameworks */,
+				234E3D3D21ADA5010032F422 /* libz.1.2.5.tbd in Frameworks */,
+				237DE5D921AE871900CEC6C9 /* MobileRTC.framework in Frameworks */,
+				234E3D3921ADA4E10032F422 /* libsqlite3.tbd in Frameworks */,
+				7CA7BD066A2865127E0463D0 /* Pods_AmicoLive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D1021AD7B9B0032F422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965B36D202F2AD5937666716 /* Pods_AmicoLiveTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D1B21AD7B9B0032F422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B888BFFCED6D2410F9588C /* Pods_AmicoLiveUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230462DB21C7DBE50003BAED /* PopOverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				230462D921C7DBC90003BAED /* AddContactsTableViewCell.swift */,
+				230462DC21C7DC0F0003BAED /* AddContactOptionsViewController.swift */,
+			);
+			path = PopOverViewController;
+			sourceTree = "<group>";
+		};
+		23229DA421CBA0A100A80989 /* ListUsers */ = {
+			isa = PBXGroup;
+			children = (
+				23412F3A21C8FA7300D18A62 /* ListUsers.swift */,
+				23412F3B21C8FA7300D18A62 /* Users.swift */,
+			);
+			path = ListUsers;
+			sourceTree = "<group>";
+		};
+		23229DA521CBA0C800A80989 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				2389CA1721C800E8005CF310 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		23229DAC21CBB6B600A80989 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				23229DAA21CBB64F00A80989 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2334C65B21BEA5FA006EBE88 /* CustomSplash */ = {
+			isa = PBXGroup;
+			children = (
+				2334C65C21BEA61C006EBE88 /* CustomSplashStoryboard.storyboard */,
+				2334C65E21BEA655006EBE88 /* CustomSplashViewController.swift */,
+			);
+			path = CustomSplash;
+			sourceTree = "<group>";
+		};
+		23412F3921C8FA2800D18A62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23229DA421CBA0A100A80989 /* ListUsers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23412F3E21C8FBC200D18A62 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23412F3F21C8FBDA00D18A62 /* ListUserViewModel.swift */,
+				23229DA821CBB58C00A80989 /* GetUserViewModel.swift */,
+				23B21DE421E62FF700386FE8 /* CheckEmailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		234E3CF621AD7B990032F422 = {
+			isa = PBXGroup;
+			children = (
+				237DE5D821AE871900CEC6C9 /* MobileRTC.framework */,
+				2307651221AE867C00E325D1 /* MobileRTCResources.bundle */,
+				234E3D3121AD808C0032F422 /* .swiftlint.yml */,
+				234E3D0121AD7B990032F422 /* AmicoLive */,
+				234E3D1621AD7B9B0032F422 /* AmicoLiveTests */,
+				234E3D2121AD7B9B0032F422 /* AmicoLiveUITests */,
+				234E3D0021AD7B990032F422 /* Products */,
+				234E3D3321ADA4C90032F422 /* Frameworks */,
+				47587FE301A5171C49ACA142 /* Pods */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		234E3D0021AD7B990032F422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				234E3CFF21AD7B990032F422 /* AmicoLive.app */,
+				234E3D1321AD7B9B0032F422 /* AmicoLiveTests.xctest */,
+				234E3D1E21AD7B9B0032F422 /* AmicoLiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		234E3D0121AD7B990032F422 /* AmicoLive */ = {
+			isa = PBXGroup;
+			children = (
+				234A93FD21FB50D700599AB3 /* AmicoLive.entitlements */,
+				23229DAC21CBB6B600A80989 /* User */,
+				234E3D0221AD7B990032F422 /* AppDelegate.swift */,
+				23229DA521CBA0C800A80989 /* NetworkService */,
+				23EF3B7F21C94C4300035C9E /* DataSources */,
+				23EF3B7421C9342B00035C9E /* Extensions */,
+				23412F3E21C8FBC200D18A62 /* ViewModels */,
+				23412F3921C8FA2800D18A62 /* Models */,
+				2334C65B21BEA5FA006EBE88 /* CustomSplash */,
+				2384653321B00A6300E1B820 /* Assets */,
+				2384653221B00A4E00E1B820 /* Services */,
+				2384653121B00A4200E1B820 /* Helpers */,
+				2384652D21B00A0600E1B820 /* Scenes */,
+				2384653421B00A8200E1B820 /* Misc */,
+				234E3D0E21AD7B9B0032F422 /* Info.plist */,
+				234E3D0921AD7B9B0032F422 /* Assets.xcassets */,
+				23FE33A221DA656400669220 /* MeetingItemData.swift */,
+				2317DE64228C110F005FF973 /* ForgotPasswordViewController.swift */,
+			);
+			path = AmicoLive;
+			sourceTree = "<group>";
+		};
+		234E3D1621AD7B9B0032F422 /* AmicoLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				234E3D1721AD7B9B0032F422 /* AmicoLiveTests.swift */,
+				234E3D1921AD7B9B0032F422 /* Info.plist */,
+			);
+			path = AmicoLiveTests;
+			sourceTree = "<group>";
+		};
+		234E3D2121AD7B9B0032F422 /* AmicoLiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				234E3D2221AD7B9B0032F422 /* AmicoLiveUITests.swift */,
+				234E3D2421AD7B9B0032F422 /* Info.plist */,
+			);
+			path = AmicoLiveUITests;
+			sourceTree = "<group>";
+		};
+		234E3D3321ADA4C90032F422 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				234E3D3E21ADA50E0032F422 /* VideoToolbox.framework */,
+				234E3D3C21ADA5010032F422 /* libz.1.2.5.tbd */,
+				234E3D3A21ADA4F20032F422 /* libstdc++.6.0.9.tbd */,
+				234E3D3821ADA4E10032F422 /* libsqlite3.tbd */,
+				234E3D3421ADA4CA0032F422 /* MobileRTC.framework */,
+				234E3D3521ADA4CA0032F422 /* MobileRTCResources.bundle */,
+				0F55379E55BF3C73BD641672 /* Pods_AmicoLive.framework */,
+				1E02305EAB5D6D87088EA692 /* Pods_AmicoLiveTests.framework */,
+				57AE9D3D8E960D759133B795 /* Pods_AmicoLiveUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2384652C21B009F400E1B820 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				230462DB21C7DBE50003BAED /* PopOverViewController */,
+				237DE5DD21AEB15300CEC6C9 /* MenuViewController.swift */,
+				23FE33A021DA533B00669220 /* EditMeetingViewController.swift */,
+				2384653721B03AB200E1B820 /* ScheduleMeetingViewController.swift */,
+				23DD70BB21B69BAF0079666F /* JoinAMeetingViewController.swift */,
+				23DD70BD21B6DFC50079666F /* SignInViewController.swift */,
+				23DAA78321B7E76800C8B573 /* UpcommingEventsViewController.swift */,
+				235F505521BABEFC00919BEC /* StartMeetingViewController.swift */,
+				230462DE21C7E1380003BAED /* ContactsViewController.swift */,
+				23B21DE221E61CBB00386FE8 /* AddContactViewController.swift */,
+				234746E22204366F005CEBBC /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2384652D21B00A0600E1B820 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2384653021B00A2000E1B820 /* Storyboards */,
+				2384652F21B00A1700E1B820 /* Views */,
+				2384652E21B00A1000E1B820 /* Cells */,
+				2384652C21B009F400E1B820 /* View Controllers */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2384652E21B00A1000E1B820 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				237DE5DF21AEB3CB00CEC6C9 /* MenuOptionTableViewCell.swift */,
+				23DAA78521B7F12400C8B573 /* UpcommingEventsTableViewCell.swift */,
+				23DF346621E4D28C00C96DB9 /* ContactsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2384652F21B00A1700E1B820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				237DE5E121AEBE6400CEC6C9 /* BorderedButton.swift */,
+				23A6357E21B15C8C00D9459E /* HeaderLogoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2384653021B00A2000E1B820 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				234E3D0621AD7B990032F422 /* Main.storyboard */,
+				234E3D0B21AD7B9B0032F422 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2384653121B00A4200E1B820 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				23703390220865F6007AE1EE /* RouteManager.swift */,
+				237DE5E321AEDADC00CEC6C9 /* TokenGenerator.swift */,
+				235F505321BAAE5600919BEC /* MessageManager.swift */,
+				2334C65721BE936E006EBE88 /* Toast.swift */,
+				23592CA321C116FF00527437 /* TextfieldValidator.swift */,
+				230137E721BED119009ED946 /* Defaults.swift */,
+				23025A3321C005900022029F /* Alert.swift */,
+				23EF3B7D21C935A500035C9E /* Contacts.swift */,
+				23229DA621CBA15600A80989 /* AmicoTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2384653221B00A4E00E1B820 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				237DE5E521AEDD5300CEC6C9 /* ZoomService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2384653321B00A6300E1B820 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2384653421B00A8200E1B820 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				237DE5E721AEDE2900CEC6C9 /* Constants.swift */,
+				2334C65121BE8BB3006EBE88 /* ScheduleMeetingData.swift */,
+				2334C65321BE8C29006EBE88 /* MeetingType.swift */,
+				2334C65521BE8C47006EBE88 /* AudioType.swift */,
+				2334C65921BE976D006EBE88 /* ErrorResults.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		23EF3B7421C9342B00035C9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23DAA78721B7F55F00C8B573 /* Extensions.swift */,
+				23EF3B7121C9340800035C9E /* Extension+UIApplication.swift */,
+				23EF3B7521C934C400035C9E /* Extension+UITextfield.swift */,
+				23EF3B7721C934DB00035C9E /* Extension+UIScrollView.swift */,
+				23EF3B7921C934F000035C9E /* Extension+UiViewController.swift */,
+				23EF3B7B21C9350E00035C9E /* Extension+UiView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23EF3B7F21C94C4300035C9E /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				23229DAD21CBB71A00A80989 /* MenuDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		47587FE301A5171C49ACA142 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3F2678720A621F9036D3751 /* Pods-AmicoLive.debug.xcconfig */,
+				683C5CB13CC687B4947390E2 /* Pods-AmicoLive.release.xcconfig */,
+				6BB18DF6F4184E3E56BF75D0 /* Pods-AmicoLiveTests.debug.xcconfig */,
+				5BED44374423B249E7425576 /* Pods-AmicoLiveTests.release.xcconfig */,
+				B675AE09D3A6275D4D4C0635 /* Pods-AmicoLiveUITests.debug.xcconfig */,
+				67F3F5624BA41B2AE44AEF79 /* Pods-AmicoLiveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		234E3CFE21AD7B990032F422 /* AmicoLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234E3D2721AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLive" */;
+			buildPhases = (
+				1672063F38DFC0AE43A731A7 /* [CP] Check Pods Manifest.lock */,
+				234E3CFB21AD7B990032F422 /* Sources */,
+				234E3CFC21AD7B990032F422 /* Frameworks */,
+				234E3CFD21AD7B990032F422 /* Resources */,
+				234E3D3021AD806B0032F422 /* SwiftLint Run Script */,
+				237DE5DB21AE871900CEC6C9 /* Embed Frameworks */,
+				FBA386502597EF6C27D72B73 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmicoLive;
+			productName = AmicoLive;
+			productReference = 234E3CFF21AD7B990032F422 /* AmicoLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		234E3D1221AD7B9B0032F422 /* AmicoLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234E3D2A21AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLiveTests" */;
+			buildPhases = (
+				56DBF2BD93D08E6CB842A3E9 /* [CP] Check Pods Manifest.lock */,
+				234E3D0F21AD7B9B0032F422 /* Sources */,
+				234E3D1021AD7B9B0032F422 /* Frameworks */,
+				234E3D1121AD7B9B0032F422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				234E3D1521AD7B9B0032F422 /* PBXTargetDependency */,
+			);
+			name = AmicoLiveTests;
+			productName = AmicoLiveTests;
+			productReference = 234E3D1321AD7B9B0032F422 /* AmicoLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		234E3D1D21AD7B9B0032F422 /* AmicoLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234E3D2D21AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLiveUITests" */;
+			buildPhases = (
+				DE9A70D83CE41BDCE0BD91B0 /* [CP] Check Pods Manifest.lock */,
+				234E3D1A21AD7B9B0032F422 /* Sources */,
+				234E3D1B21AD7B9B0032F422 /* Frameworks */,
+				234E3D1C21AD7B9B0032F422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				234E3D2021AD7B9B0032F422 /* PBXTargetDependency */,
+			);
+			name = AmicoLiveUITests;
+			productName = AmicoLiveUITests;
+			productReference = 234E3D1E21AD7B9B0032F422 /* AmicoLiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		234E3CF721AD7B990032F422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Invision;
+				TargetAttributes = {
+					234E3CFE21AD7B990032F422 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					234E3D1221AD7B9B0032F422 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 234E3CFE21AD7B990032F422;
+					};
+					234E3D1D21AD7B9B0032F422 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 234E3CFE21AD7B990032F422;
+					};
+				};
+			};
+			buildConfigurationList = 234E3CFA21AD7B990032F422 /* Build configuration list for PBXProject "AmicoLive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 234E3CF621AD7B990032F422;
+			productRefGroup = 234E3D0021AD7B990032F422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				234E3CFE21AD7B990032F422 /* AmicoLive */,
+				234E3D1221AD7B9B0032F422 /* AmicoLiveTests */,
+				234E3D1D21AD7B9B0032F422 /* AmicoLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		234E3CFD21AD7B990032F422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2307651321AE867C00E325D1 /* MobileRTCResources.bundle in Resources */,
+				234E3D3221AD808C0032F422 /* .swiftlint.yml in Resources */,
+				234E3D0D21AD7B9B0032F422 /* LaunchScreen.storyboard in Resources */,
+				234E3D0A21AD7B9B0032F422 /* Assets.xcassets in Resources */,
+				234E3D0821AD7B990032F422 /* Main.storyboard in Resources */,
+				2334C65D21BEA61C006EBE88 /* CustomSplashStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D1121AD7B9B0032F422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D1C21AD7B9B0032F422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1672063F38DFC0AE43A731A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmicoLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		234E3D3021AD806B0032F422 /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		56DBF2BD93D08E6CB842A3E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmicoLiveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9A70D83CE41BDCE0BD91B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmicoLiveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA386502597EF6C27D72B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmicoLive/Pods-AmicoLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONWebToken/JWT.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiContactPicker/MultiContactPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiContactPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmicoLive/Pods-AmicoLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		234E3CFB21AD7B990032F422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DD70BE21B6DFC50079666F /* SignInViewController.swift in Sources */,
+				230462DF21C7E1380003BAED /* ContactsViewController.swift in Sources */,
+				23DF346721E4D28C00C96DB9 /* ContactsTableViewCell.swift in Sources */,
+				237DE5E421AEDADC00CEC6C9 /* TokenGenerator.swift in Sources */,
+				23EF3B7621C934C400035C9E /* Extension+UITextfield.swift in Sources */,
+				23EF3B7E21C935A500035C9E /* Contacts.swift in Sources */,
+				235F505621BABEFC00919BEC /* StartMeetingViewController.swift in Sources */,
+				234E3D0321AD7B990032F422 /* AppDelegate.swift in Sources */,
+				2334C65621BE8C47006EBE88 /* AudioType.swift in Sources */,
+				2334C65A21BE976D006EBE88 /* ErrorResults.swift in Sources */,
+				230462DA21C7DBC90003BAED /* AddContactsTableViewCell.swift in Sources */,
+				234746E32204366F005CEBBC /* HomeViewController.swift in Sources */,
+				23592CA421C116FF00527437 /* TextfieldValidator.swift in Sources */,
+				23025A3421C005900022029F /* Alert.swift in Sources */,
+				23DD70BC21B69BAF0079666F /* JoinAMeetingViewController.swift in Sources */,
+				237DE5E021AEB3CB00CEC6C9 /* MenuOptionTableViewCell.swift in Sources */,
+				2334C65221BE8BB3006EBE88 /* ScheduleMeetingData.swift in Sources */,
+				23229DAE21CBB71A00A80989 /* MenuDataSource.swift in Sources */,
+				2384653821B03AB200E1B820 /* ScheduleMeetingViewController.swift in Sources */,
+				23703391220865F6007AE1EE /* RouteManager.swift in Sources */,
+				237DE5E221AEBE6400CEC6C9 /* BorderedButton.swift in Sources */,
+				23EF3B7A21C934F000035C9E /* Extension+UiViewController.swift in Sources */,
+				23B21DE521E62FF700386FE8 /* CheckEmailViewModel.swift in Sources */,
+				23229DAB21CBB64F00A80989 /* User.swift in Sources */,
+				2334C65421BE8C29006EBE88 /* MeetingType.swift in Sources */,
+				2334C65F21BEA655006EBE88 /* CustomSplashViewController.swift in Sources */,
+				23229DA921CBB58C00A80989 /* GetUserViewModel.swift in Sources */,
+				23A6357F21B15C8C00D9459E /* HeaderLogoView.swift in Sources */,
+				23412F3C21C8FA7300D18A62 /* ListUsers.swift in Sources */,
+				23EF3B7221C9340800035C9E /* Extension+UIApplication.swift in Sources */,
+				23DAA78421B7E76800C8B573 /* UpcommingEventsViewController.swift in Sources */,
+				23EF3B7821C934DB00035C9E /* Extension+UIScrollView.swift in Sources */,
+				237DE5E821AEDE2900CEC6C9 /* Constants.swift in Sources */,
+				23EF3B7C21C9350E00035C9E /* Extension+UiView.swift in Sources */,
+				237DE5E621AEDD5300CEC6C9 /* ZoomService.swift in Sources */,
+				237DE5DE21AEB15300CEC6C9 /* MenuViewController.swift in Sources */,
+				2317DE65228C110F005FF973 /* ForgotPasswordViewController.swift in Sources */,
+				23FE33A121DA533B00669220 /* EditMeetingViewController.swift in Sources */,
+				230462DD21C7DC0F0003BAED /* AddContactOptionsViewController.swift in Sources */,
+				230137E821BED119009ED946 /* Defaults.swift in Sources */,
+				23412F4021C8FBDA00D18A62 /* ListUserViewModel.swift in Sources */,
+				235F505421BAAE5600919BEC /* MessageManager.swift in Sources */,
+				2334C65821BE936E006EBE88 /* Toast.swift in Sources */,
+				2389CA1821C800E8005CF310 /* NetworkService.swift in Sources */,
+				23DAA78621B7F12400C8B573 /* UpcommingEventsTableViewCell.swift in Sources */,
+				23229DA721CBA15600A80989 /* AmicoTextField.swift in Sources */,
+				23412F3D21C8FA7300D18A62 /* Users.swift in Sources */,
+				23B21DE321E61CBB00386FE8 /* AddContactViewController.swift in Sources */,
+				23FE33A321DA656400669220 /* MeetingItemData.swift in Sources */,
+				23DAA78821B7F55F00C8B573 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D0F21AD7B9B0032F422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234E3D1821AD7B9B0032F422 /* AmicoLiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234E3D1A21AD7B9B0032F422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234E3D2321AD7B9B0032F422 /* AmicoLiveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		234E3D1521AD7B9B0032F422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 234E3CFE21AD7B990032F422 /* AmicoLive */;
+			targetProxy = 234E3D1421AD7B9B0032F422 /* PBXContainerItemProxy */;
+		};
+		234E3D2021AD7B9B0032F422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 234E3CFE21AD7B990032F422 /* AmicoLive */;
+			targetProxy = 234E3D1F21AD7B9B0032F422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		234E3D0621AD7B990032F422 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234E3D0721AD7B990032F422 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		234E3D0B21AD7B9B0032F422 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234E3D0C21AD7B9B0032F422 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		234E3D2521AD7B9B0032F422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		234E3D2621AD7B9B0032F422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		234E3D2821AD7B9B0032F422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F2678720A621F9036D3751 /* Pods-AmicoLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = AmicoLive/AmicoLive.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCL8R39CYU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AmicoLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		234E3D2921AD7B9B0032F422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 683C5CB13CC687B4947390E2 /* Pods-AmicoLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_ENTITLEMENTS = AmicoLive/AmicoLive.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCL8R39CYU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AmicoLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		234E3D2B21AD7B9B0032F422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB18DF6F4184E3E56BF75D0 /* Pods-AmicoLiveTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F92WBSNLJ3;
+				INFOPLIST_FILE = AmicoLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmicoLive.app/AmicoLive";
+			};
+			name = Debug;
+		};
+		234E3D2C21AD7B9B0032F422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BED44374423B249E7425576 /* Pods-AmicoLiveTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F92WBSNLJ3;
+				INFOPLIST_FILE = AmicoLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmicoLive.app/AmicoLive";
+			};
+			name = Release;
+		};
+		234E3D2E21AD7B9B0032F422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B675AE09D3A6275D4D4C0635 /* Pods-AmicoLiveUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F92WBSNLJ3;
+				INFOPLIST_FILE = AmicoLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmicoLive;
+			};
+			name = Debug;
+		};
+		234E3D2F21AD7B9B0032F422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F3F5624BA41B2AE44AEF79 /* Pods-AmicoLiveUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F92WBSNLJ3;
+				INFOPLIST_FILE = AmicoLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Invision.AmicoLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmicoLive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		234E3CFA21AD7B990032F422 /* Build configuration list for PBXProject "AmicoLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234E3D2521AD7B9B0032F422 /* Debug */,
+				234E3D2621AD7B9B0032F422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234E3D2721AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234E3D2821AD7B9B0032F422 /* Debug */,
+				234E3D2921AD7B9B0032F422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234E3D2A21AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234E3D2B21AD7B9B0032F422 /* Debug */,
+				234E3D2C21AD7B9B0032F422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234E3D2D21AD7B9B0032F422 /* Build configuration list for PBXNativeTarget "AmicoLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234E3D2E21AD7B9B0032F422 /* Debug */,
+				234E3D2F21AD7B9B0032F422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 234E3CF721AD7B990032F422 /* Project object */;
+}

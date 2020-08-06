@@ -1,0 +1,6 @@
+framework module Pods_AmicoLiveUITests {
+  umbrella header "Pods-AmicoLiveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
